@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'lsb_release --version'
+                sh 'lsb_release -a'
             }
         }
     }
