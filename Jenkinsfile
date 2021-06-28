@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
+                sh 'apt install lsb_release'
                 sh 'lsb_release -a'
             }
         }
