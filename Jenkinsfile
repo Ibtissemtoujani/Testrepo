@@ -1,6 +1,7 @@
 pipeline {
-    agent any
-    tools { image 'nginx-image'}
+    agent {
+    docker { image 'nginx-image'}
+    }
     
     stages{
         stage ("cloning") {
